@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.example.dell.litepaltest.Merchant_page">
+
+    <Button
+        android:id="@+id/Button_merchant_addbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:text="添加书籍" />
+
+    <Button
+        android:id="@+id/Button_merchant_bookdisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="所有书籍" />
+
+    <Button
+        android:id="@+id/Button_merchant_searchbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:text="搜索书籍" />
+
+
+
+</LinearLayout>

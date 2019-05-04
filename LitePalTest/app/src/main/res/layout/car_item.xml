@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textview_car_bname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:text="书名:"/>
+
+    <TextView
+        android:id="@+id/textview_car_bname_sql"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textview_car_bname"
+        android:textColor="@color/colorPrimary"
+        android:textSize="23dp"/>
+
+    <TextView
+        android:id="@+id/textview_car_bprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textview_car_bname_sql"
+        android:textSize="23dp"
+        android:text="—单价:"/>
+
+    <TextView
+        android:id="@+id/textview_car_bprice_sql"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textview_car_bprice"
+        android:textColor="@color/colorAccent"
+        android:textSize="23dp"/>
+
+    <TextView
+        android:id="@+id/textview_car_yuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textview_car_bprice_sql"
+        android:textSize="23dp"
+        android:textColor="@color/colorAccent"
+        android:text="元"/>
+
+    <Button
+        android:id="@+id/button_car_delete"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@id/textview_car_yuan"
+        android:layout_alignTop="@id/textview_car_yuan"
+        android:textSize="13dp"
+        android:text="删除"/>
+
+
+
+</RelativeLayout>

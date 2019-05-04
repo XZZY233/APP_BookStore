@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.example.dell.litepaltest.Login_user">
+
+    <TextView
+        android:id="@+id/TextView_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="31dp"
+        android:text="用户名："/>
+
+    <EditText
+        android:id="@+id/EditText_uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_toRightOf="@id/TextView_userName"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/TextView_userPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditText_uname"
+        android:textSize="31dp"
+        android:text="密    码："/>
+
+    <EditText
+        android:id="@+id/EditText_upwd"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_toRightOf="@id/TextView_userPwd"
+        android:layout_below="@id/EditText_uname"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/Button_user_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditText_upwd"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="注册新账号"/>
+
+    <Button
+        android:id="@+id/Button_user_login_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Button_user_register"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:text="登录"/>
+
+</RelativeLayout>

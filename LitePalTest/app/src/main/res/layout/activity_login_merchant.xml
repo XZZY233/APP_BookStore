@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.example.dell.litepaltest.Login_merchant">
+
+    <TextView
+        android:id="@+id/TextView_merchantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="31dp"
+        android:text="用户名："/>
+
+    <EditText
+        android:id="@+id/EditText_mname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_toRightOf="@id/TextView_merchantName"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/TextView_merchantPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditText_mname"
+        android:textSize="31dp"
+        android:text="密    码："/>
+
+    <EditText
+        android:id="@+id/EditText_mpwd"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_toRightOf="@id/TextView_merchantPwd"
+        android:layout_below="@id/EditText_mname"
+        android:textSize="20dp"/>
+
+
+    <Button
+        android:id="@+id/Button_merchant_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditText_mpwd"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:text="登录"/>
+
+</RelativeLayout>

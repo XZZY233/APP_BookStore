@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.litepaltest">
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login_user" />
+        <activity android:name=".Login_merchant" />
+        <activity android:name=".Register" />
+        <activity android:name=".Merchant_page" />
+        <activity android:name=".Merchant_page_addbook" />
+        <activity android:name=".Merchant_page_bookdisplay" />
+        <activity android:name=".Merchant_page_bookdetails" />
+        <activity android:name=".Merchant_page_searchbook" />
+        <activity android:name=".User_page_classify_display" />
+        <activity android:name=".User_page" />
+        <activity android:name=".User_page_bookdisplay" />
+        <activity android:name=".User_page_bookdetails" />
+        <activity android:name=".BookAdapter_user" />
+        <activity android:name=".User_page_searchbook" />
+        <activity android:name=".User_page_shoppingcar" />
+        <activity android:name=".User_page_order" />
+        <activity android:name=".User_page_order_details"></activity>
+    </application>
+
+</manifest>

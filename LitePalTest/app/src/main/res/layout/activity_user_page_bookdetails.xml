@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.litepaltest.User_page_bookdetails">
+
+    <TextView
+        android:id="@+id/TextView_bookdetails_bookName_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="31dp"
+        android:text="书名："/>
+
+    <EditText
+        android:id="@+id/EditText_bookdetails_bname_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_toRightOf="@id/TextView_bookdetails_bookName_user"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/TextView_bookdetails_authorName_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextView_bookdetails_bookName_user"
+        android:text="作者："
+        android:textSize="31dp" />
+
+    <EditText
+        android:id="@+id/EditText_bookdetails_aname_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_toRightOf="@id/TextView_bookdetails_authorName_user"
+        android:layout_below="@id/EditText_bookdetails_bname_user"
+        android:layout_alignTop="@id/TextView_bookdetails_authorName_user"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/TextView_bookdetails_bookContent_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_bookdetails_authorName_user"
+        android:textSize="31dp"
+        android:text="简介："/>
+
+    <EditText
+        android:id="@+id/EditText_bookdetails_bcontent_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_toRightOf="@id/TextView_bookdetails_bookContent_user"
+        android:layout_below="@id/EditText_bookdetails_aname_user"
+        android:layout_alignTop="@id/TextView_bookdetails_bookContent_user"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/TextView_bookdetails_bookPrice_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_bookdetails_bookContent_user"
+        android:textSize="31dp"
+        android:text="价格："/>
+
+    <EditText
+        android:id="@+id/EditText_bookdetails_bprice_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_toRightOf="@id/TextView_bookdetails_bookPrice_user"
+        android:layout_below="@id/EditText_bookdetails_bcontent_user"
+        android:layout_alignTop="@id/TextView_bookdetails_bookPrice_user"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/TextView_bookdetails_bookfirstClass_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_bookdetails_bookPrice_user"
+        android:textSize="31dp"
+        android:text="一类："/>
+
+    <EditText
+        android:id="@+id/EditText_bookdetails_bfclass_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_toRightOf="@id/TextView_bookdetails_bookfirstClass_user"
+        android:layout_below="@id/EditText_bookdetails_bprice_user"
+        android:layout_alignTop="@id/TextView_bookdetails_bookfirstClass_user"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/TextView_bookdetails_booksecondClass_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_bookdetails_bookfirstClass_user"
+        android:textSize="31dp"
+        android:text="二类："/>
+
+    <EditText
+        android:id="@+id/EditText_bookdetails_bsclass_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_toRightOf="@id/TextView_bookdetails_booksecondClass_user"
+        android:layout_below="@id/EditText_bookdetails_bfclass_user"
+        android:layout_alignTop="@id/TextView_bookdetails_booksecondClass_user"
+        android:textSize="20dp"/>
+
+
+    <Button
+        android:id="@+id/Button_merchant_addcar_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_bookdetails_booksecondClass_user"
+        android:textSize="20dp"
+        android:text="加入购物车"/>
+
+
+
+</RelativeLayout>

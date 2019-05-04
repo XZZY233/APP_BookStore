@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.litepaltest.Merchant_page_addbook">
+
+    <TextView
+        android:id="@+id/TextView_addbook_bookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="31dp"
+        android:text="书名："/>
+
+    <EditText
+        android:id="@+id/EditText_addbook_bname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_toRightOf="@id/TextView_addbook_bookName"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/TextView_addbook_authorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_addbook_bookName"
+        android:textSize="31dp"
+        android:text="作者："/>
+
+    <EditText
+        android:id="@+id/EditText_addbook_aname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_toRightOf="@id/TextView_addbook_authorName"
+        android:layout_below="@id/EditText_addbook_bname"
+        android:layout_alignTop="@id/TextView_addbook_authorName"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/TextView_addbook_bookContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_addbook_authorName"
+        android:textSize="31dp"
+        android:text="简介："/>
+
+    <EditText
+        android:id="@+id/EditText_addbook_bcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_toRightOf="@id/TextView_addbook_bookContent"
+        android:layout_below="@id/EditText_addbook_aname"
+        android:layout_alignTop="@id/TextView_addbook_bookContent"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/TextView_addbook_bookPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_addbook_bookContent"
+        android:textSize="31dp"
+        android:text="价格："/>
+
+    <EditText
+        android:id="@+id/EditText_addbook_bprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_toRightOf="@id/TextView_addbook_bookPrice"
+        android:layout_below="@id/EditText_addbook_bcontent"
+        android:layout_alignTop="@id/TextView_addbook_bookPrice"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/TextView_addbook_firstClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_addbook_bookPrice"
+        android:textSize="31dp"
+        android:text="一类："/>
+
+    <EditText
+        android:id="@+id/EditText_addbook_fclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_toRightOf="@id/TextView_addbook_firstClass"
+        android:layout_below="@id/EditText_addbook_bprice"
+        android:layout_alignTop="@id/TextView_addbook_firstClass"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/TextView_addbook_secondClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_addbook_firstClass"
+        android:textSize="31dp"
+        android:text="二类："/>
+
+    <EditText
+        android:id="@+id/EditText_addbook_sclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_toRightOf="@id/TextView_addbook_secondClass"
+        android:layout_below="@id/EditText_addbook_fclass"
+        android:layout_alignTop="@id/TextView_addbook_secondClass"
+        android:textSize="20dp"/>
+
+
+    <Button
+        android:id="@+id/Button_merchant_addbook_sql"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditText_addbook_sclass"
+        android:textSize="20dp"
+        android:text="添加"/>
+
+</RelativeLayout>
